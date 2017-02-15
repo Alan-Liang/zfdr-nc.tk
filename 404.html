@@ -2,15 +2,8 @@
 <html>
 <head>
 <title>rdfz mirror</title>
-</head>
-<frameset>
-   <frame width="100%" height="100%" id="inn" style="transform:matrix(-1,0,0,-1,0,0)" />
-   <noframes>
-   <body>
-      Your browser does not support frames.
-   </body>
-   </noframes>
-   <script>
+<script>
+setTimeout(function(){
 var loc=location.href.slice("");
 var lcc=0;
 var c=0;
@@ -23,6 +16,15 @@ for(var i=(loc.length-1);i>lcc;i--){
 }
 newloc=newloc.join("");
 document.getElementById("inn").setAttribute("src","http://"+newloc+".rdfz.cn/");
+},1000);
 </script>
+</head>
+<frameset>
+   <frame width="100%" height="100%" id="inn" style="transform:matrix(-1,0,0,-1,0,0)" />
+   <noframes>
+   <body>
+      Your browser does not support frames.
+   </body>
+   </noframes>
 </frameset>
 </html>
